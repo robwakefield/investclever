@@ -52,7 +52,7 @@ export default function Header() {
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <a
-                  href={rootHREF}
+                  href={rootHREF + "#info"}
                   className="font-medium text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   About Us

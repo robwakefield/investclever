@@ -75,7 +75,7 @@ export default function Main() {
             <img
               className="w-40 md:ml-1 ml-24"
               alt="Invest Clever"
-              src="/mockups/news.png"
+              src="/investclever/mockups/news.png"
             ></img>
             <h3 className="Avenir font-semibold">
               Breaking News

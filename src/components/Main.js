@@ -1,5 +1,18 @@
+'use client'
+
+import { usePostHog } from 'posthog-js/react'
 
 export default function Main() {
+  const posthog = usePostHog()
+
+  const download_button = () => {
+    var email = document.getElementById("email_input").value
+    if (email){
+      posthog?.identify(email)
+    }
+    posthog?.capture('Clicked Download Now');
+  }
+
   return (
     <section className="text-white body-font">
       <div className="max-w-7xl mx-auto flex px-5 pb-24 pt-6 sm:pt-10 md:flex-row flex-col items-center">
@@ -117,6 +130,7 @@ export default function Main() {
             </h1>
             <div className="pb-2">
               <input
+                id="email_input"
                 placeholder="jack@example.com"
                 name="email"
                 type="email"
@@ -127,6 +141,7 @@ export default function Main() {
             <a
                 className="inline-flex items-center w-1/2 sm:w-1/3 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
                 href="#"
+                onClick={download_button}
               >
               <span className="justify-center w-full">Get Link</span>
             </a>

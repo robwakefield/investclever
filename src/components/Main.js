@@ -14,7 +14,7 @@ export default function Main() {
       posthog?.identify(email)
     }
     posthog?.capture('Clicked Download Now');
-    router.push(rootHREF + 'coming-soon')
+    router.push('coming-soon')
   }
 
   const get_link_btn = <a 

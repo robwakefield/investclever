@@ -29,7 +29,7 @@ export default function Main() {
           <img
             className="w-80 md:ml-1 ml-24"
             alt="Invest Clever"
-            src="/mockups/trading.png"
+            src="/investclever/mockups/trading.png"
           ></img>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Main() {
             <img
               className="w-40 md:ml-1 ml-24"
               alt="Invest Clever"
-              src="/mockups/guide.png"
+              src="/investclever/mockups/guide.png"
             ></img>
             <h3 className="Avenir font-semibold">
               Interactive Guides
@@ -55,7 +55,7 @@ export default function Main() {
             <img
               className="w-40 md:ml-1 ml-24"
               alt="Invest Clever"
-              src="/mockups/trading.png"
+              src="/investclever/mockups/trading.png"
             ></img>
             <h3 className="Avenir font-semibold">
               Practice Trading
@@ -65,7 +65,7 @@ export default function Main() {
             <img
               className="w-40 md:ml-1 ml-24"
               alt="Invest Clever"
-              src="/mockups/forum.png"
+              src="/investclever/mockups/forum.png"
             ></img>
             <h3 className="Avenir font-semibold">
               Peer to Peer Forum

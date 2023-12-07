@@ -1,9 +1,12 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
 import { usePostHog } from 'posthog-js/react'
+import { rootHREF } from '@/rootHREF'
 
 export default function Main() {
   const posthog = usePostHog()
+  const router = useRouter()
 
   const download_button = () => {
     var email = document.getElementById("email_input").value
@@ -11,7 +14,16 @@ export default function Main() {
       posthog?.identify(email)
     }
     posthog?.capture('Clicked Download Now');
+    router.push(rootHREF + 'coming-soon')
   }
+
+  const get_link_btn = <a 
+      className="inline-flex items-center w-1/2 sm:w-1/3 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
+      href={rootHREF + "coming-soon"}
+      onClick={download_button}
+    >
+    <span className="justify-center w-full">Get Link</span>
+    </a>
 
   return (
     <section className="text-white body-font">
@@ -26,13 +38,13 @@ export default function Main() {
           <div className="flex flex-col sm:flex-row justify-center">
             <a
               className="inline-flex items-center invisible h-0 sm:h-auto sm:visible sm:px-5 sm:py-3 sm:mt-2 font-medium text-white hover:text-black transition duration-500 ease-in-out transform bg-transparent border rounded-lg hover:bg-gray-300"
-              href="#info"
+              href={rootHREF + "#info"}
             >
               <span className="justify-center">Find out more</span>
             </a>
             <a
               className="inline-flex items-center sm:mx-4 px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform border rounded-lg sm:bg-sky-700 sm:hover:bg-sky-600"
-              href="#download"
+              href={rootHREF + "#download"}
             >
               <span className="justify-center">Download Now</span>
             </a>
@@ -138,13 +150,7 @@ export default function Main() {
                 className="border border-gray-600 w-2/2 sm:w-1/3 pr-2 pl-2 py-3 mt-2 rounded-md text-black font-semibold hover:border-gray-900"
               ></input>{" "}
             </div>
-            <a
-                className="inline-flex items-center w-1/2 sm:w-1/3 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
-                href="#"
-                onClick={download_button}
-              >
-              <span className="justify-center w-full">Get Link</span>
-            </a>
+            {get_link_btn}
           </div>
         </div>
       </section>

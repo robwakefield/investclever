@@ -4,10 +4,10 @@ export default function Main() {
     <section className="text-white body-font">
       <div className="max-w-7xl mx-auto flex px-5 pb-24 pt-6 sm:pt-10 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-2/3 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-10 items-center text-center">
-          <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir font-semibold xl:w-2/2 text-white">
+          <h1 className="mb-5 sm:text-6xl text-5xl text-center md:text-start sm:text-center items-center Avenir font-semibold xl:w-2/2 text-white">
             Want to improve your Financial Literacy?
           </h1>
-          <p className="mb-4 xl:w-3/4 text-white text-lg">
+          <p className="mb-4 xl:w-3/4 text-center md:text-start sm:text-center text-white text-lg">
             Invest Clever is a brand new app to help young people improve their knowledge of the financial world.
           </p>
           <div className="flex flex-col sm:flex-row justify-center">
@@ -34,60 +34,60 @@ export default function Main() {
         </div>
       </div>
       <div id="info" className="grr max-w-7xl pt-0 sm:mx-auto mx-10 text-center">
-        <h1 className="mb-8 text-6xl Avenir font-semibold text-white">
+        <h1 className="mb-8 sm:text-6xl text-5xl Avenir font-semibold text-white">
           Your Road to Success
         </h1>
-        <h1 className="mb-8 text-2xl Avenir font-semibold text-white text-center">
+        <h1 className="mb-8 sm:text-2xl text-l text-center Avenir font-semibold text-white text-center">
           Here's how Invest Clever can help improve your financial knowledge
         </h1>
-        <div className="flex flex-col sm:flex-row justify-between sm:mx-24">
+        <div className="flex flex-col sm:flex-row justify-between sm:mx-24 items-center">
           <div className="pb-4">
             <img
-              className="w-40 md:ml-1 ml-24"
+              className="w-40"
               alt="Invest Clever"
               src="/investclever/mockups/guide.png"
             ></img>
-            <h3 className="Avenir font-semibold">
+            <h3 className="Avenir font-semibold text-center">
               Interactive Guides
             </h3>
           </div>
           <div className="pb-4">
             <img
-              className="w-40 md:ml-1 ml-24"
+              className="w-40"
               alt="Invest Clever"
               src="/investclever/mockups/trading.png"
             ></img>
-            <h3 className="Avenir font-semibold">
+            <h3 className="Avenir font-semibold text-center">
               Practice Trading
             </h3>
           </div>
           <div className="pb-4">
             <img
-              className="w-40 md:ml-1 ml-24"
+              className="w-40"
               alt="Invest Clever"
               src="/investclever/mockups/forum.png"
             ></img>
-            <h3 className="Avenir font-semibold">
+            <h3 className="Avenir font-semibold text-center">
               Peer to Peer Forum
             </h3>
           </div>
           <div className="pb-4">
             <img
-              className="w-40 md:ml-1 ml-24"
+              className="w-40"
               alt="Invest Clever"
               src="/investclever/mockups/news.png"
             ></img>
-            <h3 className="Avenir font-semibold">
+            <h3 className="Avenir font-semibold text-center">
               Breaking News
             </h3>
           </div>
         </div>
       </div>
       <div id="info" className="grr max-w-7xl pt-20 sm:mx-auto mx-10 text-center">
-        <h1 className="mb-8 text-6xl Avenir font-semibold text-white">
+        <h1 className="mb-8 text-4xl sm:text-6xl Avenir font-semibold text-white">
           The Big Three
         </h1>
-        <h1 className="mb-8 text-2xl Avenir font-semibold text-white text-center">
+        <h1 className="mb-8 sm:text-2xl text-xl Avenir font-semibold text-white text-center">
           Can you answer these three financial questions?
         </h1>
         <div className="container flex flex-col items-center justify-center px-2 mx-auto py-2 my-4 bg-transparent border sm:border-0 rounded-lg ">
@@ -109,10 +109,10 @@ export default function Main() {
       <section id="download" className="relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-24">
-            <h1 className="mb-5 text-6xl Avenir font-semibold text-white">
+            <h1 className="mb-5 sm:text-6xl text-5xl Avenir font-semibold text-white">
               Download Now
             </h1>
-            <h1 className="mb-9 text-2xl font-semibold text-white">
+            <h1 className="mb-9 sm:text-2xl text-xl font-semibold text-white">
               Enter your email address to receive a download link
             </h1>
             <div className="pb-2">
@@ -121,7 +121,7 @@ export default function Main() {
                 name="email"
                 type="email"
                 autoComplete="email"
-                className="border border-gray-600 w-1/2 sm:w-1/3 pr-2 pl-2 py-3 mt-2 rounded-md text-black font-semibold hover:border-gray-900"
+                className="border border-gray-600 w-2/2 sm:w-1/3 pr-2 pl-2 py-3 mt-2 rounded-md text-black font-semibold hover:border-gray-900"
               ></input>{" "}
             </div>
             <a

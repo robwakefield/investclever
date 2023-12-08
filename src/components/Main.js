@@ -108,29 +108,6 @@ export default function Main() {
           </div>
         </div>
       </div>
-      <div id="info" className="grr max-w-7xl pt-20 sm:mx-auto mx-10 text-center">
-        <h1 className="mb-8 text-4xl sm:text-6xl Avenir font-semibold text-white">
-          The Big Three
-        </h1>
-        <h1 className="mb-8 sm:text-2xl text-xl Avenir font-semibold text-white text-center">
-          Can you answer these three financial questions?
-        </h1>
-        <div className="container flex flex-col items-center justify-center px-2 mx-auto py-2 my-4 bg-transparent border sm:border-0 rounded-lg ">
-          <h3>
-            Suppose you had <b>£100</b> in a savings account and the interest rate was <b>2%</b> per year. After <b>5 years</b>, how much would you have left in the account?
-          </h3>
-        </div>
-        <div className="container flex flex-col items-center justify-center px-2 mx-auto py-2 my-4 bg-transparent border sm:border-0 rounded-lg ">
-          <h3>
-            If the interest rate on your savings account was <b>1%</b> per year and inflation was <b>2%</b> per year, after <b>1 year</b> would you be able to buy more or less with the money in the account than you would today?
-          </h3>
-        </div>
-        <div className="container flex flex-col items-center justify-center px-2 mx-auto py-2 my-4 bg-transparent border sm:border-0 rounded-lg">
-          <h3>
-            <b>True or False</b> - Buying a single company's stock usually provides a safer return that a stock mutual fund?
-          </h3>
-        </div>
-      </div>
       <section id="download" className="relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-24">
